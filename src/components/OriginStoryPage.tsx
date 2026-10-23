@@ -14,6 +14,17 @@ export function OriginStoryPage() {
 
       <main>
         <section className="origin-opening" aria-labelledby="origin-title">
+          <figure className="origin-map">
+            <img
+              src="/assets/brand/ceil-andia-map.svg"
+              alt="Mapa esquemático das vias de Ceilândia"
+            />
+            <span
+              className="origin-map-marker"
+              role="img"
+              aria-label="Localização do ARQUIVO061: 15°49′02″S, 48°06′19″W"
+            />
+          </figure>
           <p className="origin-location">CEILÂNDIA, DISTRITO FEDERAL <span>·</span> CÓDIGO 061</p>
           <h1 id="origin-title">Como tudo<br /><em>começou</em></h1>
           <div className="origin-opening-copy">
@@ -24,6 +35,9 @@ export function OriginStoryPage() {
               O retalho que compõe o seu casaco "Satélite" veio exatamente daí: garimpado de uma pequena confecção no P Sul. Ele tem a gramagem pesada e a textura de quem foi feito para durar. O que a grande indústria ia jogar no lixo, virou streetwear de verdade.
             </p>
           </div>
+          <p className="origin-map-attribution">
+            Dados cartográficos: <a href="https://www.openstreetmap.org/copyright" rel="noreferrer" target="_blank">© OpenStreetMap contributors</a>
+          </p>
         </section>
 
         <section className="origin-pioneer" aria-labelledby="pioneer-title">

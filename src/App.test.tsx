@@ -80,6 +80,15 @@ describe('standalone origin story page', () => {
     expect(screen.getByRole('heading', { name: /como tudo começou/i })).toBeInTheDocument()
     expect(screen.getByText(/Na Ceilândia, moda nunca foi sobre a etiqueta cara do shopping/)).toBeInTheDocument()
     expect(screen.getByRole('heading', { name: /a voz.*gog/i })).toBeInTheDocument()
+    expect(screen.getByRole('img', { name: /mapa esquemático das vias de ceilândia/i })).toHaveAttribute(
+      'src',
+      '/assets/brand/ceil-andia-map.svg',
+    )
+    expect(screen.getByRole('img', { name: /localização do arquivo061.*15°49′02″s/i })).toBeInTheDocument()
+    expect(screen.getByRole('link', { name: /openstreetmap contributors/i })).toHaveAttribute(
+      'href',
+      'https://www.openstreetmap.org/copyright',
+    )
     expect(screen.getByRole('img', { name: /GOG|Genival Oliveira Gonçalves/i })).toHaveAttribute(
       'src',
       '/assets/brand/gog.jpg',
